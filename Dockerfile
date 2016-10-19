@@ -31,5 +31,7 @@ ENV GOPATH /root/.workspace/go
 RUN goenv install $GOVERSION
 RUN goenv global $GOVERSION
 
-CMD ["go","version"]
+ENTRYPOINT ["go"]
+
+CMD ["version"]
     
