@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         curl \
         && rm -rf /var/lib/apt/lists/*
 
-ENV GOVERSION 1.7.2
+ENV GOVERSION 1.7.1
 ENV WORKSPACE "/root/.workspace"
 
 RUN mkdir -p $WORKSPACE
