@@ -27,6 +27,7 @@ RUN eval "$(goenv init -)"
 WORKDIR $WORKSPACE
 RUN mkdir -p /root/.workspace/go
 ENV GOPATH /root/.workspace/go
+ENV PATH /root/.workspace/go/bin:$PATH
 
 RUN goenv install $GOVERSION
 RUN goenv global $GOVERSION
